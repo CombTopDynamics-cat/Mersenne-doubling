@@ -11,7 +11,9 @@ It also contains the data and conlusions obtained in Section 5 of the paper
 * **compute_all_periods_in_a_range_of_decreasing_odd_qs**\
 An easy and straightforward implementation of **Algorithm ???** in Section 4.\
 Given an interval of *odd* **unsigned long int** *q*'s, this program computes
-the periods of all points in the circle of the form *1/q* under the doubling map.
-
+the periods of all points in the circle of the form *1/q* under the doubling map.\
+**Usage:** compute_all_periods_in_a_range_of_decreasing_odd_qs.exe q_ini q_end\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+where **q_ini** and **q_end** must be larger than 16.
 
 All the code in this repository is authored by ?????, 2026.
