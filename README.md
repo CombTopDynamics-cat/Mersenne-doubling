@@ -9,6 +9,9 @@ It also contains the data and conlusions obtained in Section 5 of the paper
 (see **Theorem A(a)** and ??????).
 
 * **compute_all_periods_in_a_range_of_decreasing_odd_qs**\
-Given an interval of *odd* **unsigned long int** *q*'s, this program computes the periods of all points in the circle of the form *1/q* under the doubling map.
+An easy and straightforward implementation of **Algorithm ???** in Section 4.\
+Given an interval of *odd* **unsigned long int** *q*'s, this program computes
+the periods of all points in the circle of the form *1/q* under the doubling map.
+
 
 All the code in this repository is authored by ?????, 2026.
