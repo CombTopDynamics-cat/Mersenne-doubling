@@ -7,6 +7,7 @@ void Help(char * progname) {
   fprintf (stderr, "\nUsage: %s q_ini q_end\n\nThis program works only for periods larger than 16.\nThus, q_ini, q_end > 16.\n\n\n", progname); 
   exit(1);
 }
+
 bool IsAllDigits (char * s) { 
   while (*s) { if (*s > 57 || *s < 48) return false; s++; }
   return true;
