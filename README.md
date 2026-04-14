@@ -55,9 +55,11 @@ field_number&nbsp;&nbsp;&nbsp;&nbsp;is a positive integer that specifies the num
 
 We include four data files with computed periods:
 * **EvenPeriodsDataBase_segmented_and_sorted_with_respect_to_Qs.dat.gz**
-* **Large_PrimePeriods_segmented_and_sorted.lis.gz**
+* **Large_PrimePeriods_segmented_and_sorted.lis.gz**\
+  Every one of the 12137 pairs *(q, period)* in this file provides an example of a Mersenne number *M(period)* with prime exponent which is not prime because it has a divisor *q*.
 * **OddPeriods_NotPrime_segmented_and_sorted.lis.gz**
-* **PrimePeriods_segmented_and_sorted.lis.gz**
+* **PrimePeriods_segmented_and_sorted.lis.gz**\
+  Every one of the 1597 pairs  *(q, period)* in this file provides an example of a Mersenne number *M(period)* with prime exponent which is not prime because it has a divisor *q*.
 
 The files have self descriptive filenames. However some clarifications are necessary.
 * The three 'sorted.lis' files are sorted with respect to periods.
