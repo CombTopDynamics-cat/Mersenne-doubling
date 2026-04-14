@@ -6,104 +6,64 @@ This repository contains the programs developed in Section 4 and used in Section
 It also contains the data and conlusions obtained in Section 5 of the article
 (see **Theorem A(a)** and ??????).
 
+Our goal is to calculate the periods of points of the circle of the form *1/q*,
+with odd *q*, under the doubling map, and determine when the period is prime
+(see **Theorem A(a)** of the article for the motivation). 
+In order to increase efficiency, we have separated the calculation of the periods (which is the most critical procedure) from the task (done as post-processing) of determining which of these periods are prime.
+
+The names of the programs used in these two tasks are
+**compute_all_periods_in_a_range_of_odd_qs**
+and
+**IsPrime_geek**.
+
+* **compute_all_periods_in_a_range_of_odd_qs**\
+The goal of this program is to compute the periods
+of the points of the circle of the form *1/q* under the doubling map,
+for each odd *q* in a range of positive integers.
+It is a simple and straightforward implementation of the **Algorithm ???** from Section 4.\
+**Usage:** compute_all_periods_in_a_range_of_odd_qs.exe q_ini q_end\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+where **q_ini** and **q_end** must be greater than 16.
+
 
 =====================================================================
 
 
 
-compute_all_periods_in_a_range_of_odd_qs
-The goal of this program is to compute the periods of the points of the circle of the form 1/q under the application of splitting, for each odd q in a range of positive integers. It is a simple and straightforward implementation of the ??? algorithm in Section 4.
-
-Usage: compute_all_periods_in_a_range_of_odd_qs.exe q_ini q_end
-where q_ini and q_end must be greater than 16.
-
-IsPrime_geek Determines the primality of a set of positive integers. It uses the most naive algorithm with the help of a built-in (at compile time) table with the first 49,999,999 prime numbers (taken from The PrimePages: prime number research & records http://https://t5k.org/). As a result, compilation is soooo long and tedious, and uses a special gcc flag. To make it easier, we include the corresponding Makefile and a special '.c' file (which is already #include'd) with the definition of the prime number table.
-Usage: IsPrime_geek.exe [-h][--help] filename field_number
-where
-file_name is the full path to a file containing a column of non-negative integers to be checked for primality.
-The filename must not start with the '-' character.
-Column separators are strings composed of any number of spaces or tabs.
 Lines that start with the character '#' or without a 'field_number' or with a non-numeric field
 'field_number' will be considered comment lines.
 field_number is a positive integer that specifies the number of the column to be read, to check the primality of its
 elements.
 
-All code in this repository is by Lluís Alsedà, 2026.
-
-
-
-
-
-
-
-
-
 ==============================================================
 
 
-
-
-
-
-
-We aim at computing the periods of points in the circle of the form *1/q*,
-with *q* odd, under the doubling map, and determine when the period is prime.
-(see **Theorem A(a)** of the paper for motivation).
-In sake of efficiency we have separated the computation of the periods
-(which is the most critical procedure) 
-from the task (done as post-processing) 
-of determining which of these periods are prime.
-
-
-Our goal is to calculate the periods of points of the circle of the form *1/q*,
-with odd *q*, under the doubling map, and determine when the period is prime. (see Theorem A(a) of the article for the motivation). In order to increase efficiency, we have separated the calculation of the periods (which is the most critical procedure) from the task (done as post-processing) of determining which of these periods are prime.
-
-The names of the programs used in these two tasks are compute_all_periods_in_a_range_of_odd_qs and IsPrime_geek.
-
-
-
-
-The names of the programs used in these two tasks are
-**compute_all_periods_in_a_range_of_odd_qs**,
-and
-**IsPrime_geek**.
-
-* **compute_all_periods_in_a_range_of_odd_qs**\
-The purpose of this program is to compute the periods
-of points in the circle of the form *1/q* under the doubling map,
-for every *q* odd in an interval of positive integers.
-It is an easy and straightforward implementation of **Algorithm ???** in Section 4.\
-**Usage:** compute_all_periods_in_a_range_of_odd_qs.exe q_ini q_end\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-where **q_ini** and **q_end** must be larger than 16.
-
-* **IsPrime_geek**
+* **IsPrime_geek**\
 Determines the primality of a set of positive integers.
-It uses the naivest algorithm with the help of a
-built-in (at compilation time) of a table with the 49,999,999 first prime numbers
+It uses the most naive algorithm, with the help of a
+built-in (at compile time) table with the first 49,999,999 prime numbers
 (taken from *The PrimePages: prime number research & records* http://https://t5k.org/).
-As a consequence the compilation is veeeeeeeery long and tedious, and uses a special
-**gcc** flag. For easines we include the corresponding Makefile, and a special '.c'
-file (that is already #include'd) with the definition of the primes table.\
-**Usage:** IsPrime_geek.exe [-h][--help] filename field_number\
+As a consequence, compilation is veeeeeeeery long and tedious, and we must use a special
+**gcc** flag. To make it easier, we include the corresponding Makefile and a special '.c'
+file (which is already #include'd) with the definition of the prime numbers table.\
+**Usage:** IsPrime_geek.exe [-h][--help] file_name field_number\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-filename&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is the full path
-of a file containing a column of non-negative integers to be checked for primality.\
+file_name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is the full path
+to a file containing a column of non-negative integers to be checked for primality.\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;The filename must not begin with the character '-'.\
+&nbsp;&nbsp;The filename must not start with the '-' character.\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;The column separators are strings composed of any number of spaces or tabs.\
+&nbsp;&nbsp;Column separators are strings composed of any number of spaces or tabs.\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;The lines starting with the character '#' or without a field 'field_number' or with a non-numeric field\
+&nbsp;&nbsp;Lines that start with the character '#' or without a field 'field_number' or with a non-numeric field\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;'field_number' will be considered comment lines.\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-field_number&nbsp;&nbsp;&nbsp;&nbsp;is a positive integer specifying
-the number of the column to be read, to check the primality of its\
+field_number&nbsp;&nbsp;&nbsp;&nbsp;is a positive integer that specifies the number of the column to be read, to check the primality of its\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;elements.
   
   
 
-All the code in this repository is authored by Lluís Alsedà, 2026.
+All code in this repository is by Lluís Alsedà, 2026.
