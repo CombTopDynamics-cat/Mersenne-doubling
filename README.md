@@ -61,7 +61,7 @@ We include four data files with computed periods:
 * **PrimePeriods_segmented_and_sorted.lis.gz**\
   Every one of the 1597 pairs  *(q, period)* in this file provides an example of a Mersenne number *M(period)* with prime exponent which is not prime because it has a divisor *q*.
 
-The files have self descriptive filenames. However some clarifications are necessary.
+The files have self descriptive names. However some clarifications are necessary.
 * The three 'sorted.lis' files are sorted with respect to periods.
 * Large means that the periods in the file are larger than 136,279,841 which is the number *p* of the last known Mersenne prime in the *List of Known Mersenne Prime Numbers*.
 * Segmented refers to the column *segm* in the four files above. When a register has the first field (*segm*) equals to *s*, the number *q*
