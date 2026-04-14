@@ -52,8 +52,17 @@ to a file containing a column of non-negative integers\
 field_number&nbsp;&nbsp;&nbsp;&nbsp;is a positive integer that specifies the number of the column to be read, to check\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;the primality of its elements.
-  
 
-  136,279,841
+We include four data files with computed periods:
+* **EvenPeriodsDataBase_segmented_and_sorted_with_respect_to_Qs.dat.gz**
+* **Large_PrimePeriods_segmented_and_sorted.lis.gz**
+* **OddPeriods_NotPrime_segmented_and_sorted.lis.gz**
+* **PrimePeriods_segmented_and_sorted.lis.gz**
+
+The files have self descriptive filenames. However some clarifications are necessary.
+* The three 'sorted.lis' files are sorted with respect to periods.
+* Large means larger than 136,279,841 which is the number *p* of the last known Mersenne prime in the *List of Known Mersenne Prime Numbers*.
+* Segmented refers to the column *segm* in the four files above. When a register has the first field (*segm*) equals to *s*, the number *q*
+  in the register verifies *2^(s-1) < q < 2^s*.
 
 All code in this repository is by Lluís Alsedà, 2026.
