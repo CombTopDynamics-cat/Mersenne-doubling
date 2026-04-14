@@ -1,0 +1,12 @@
+The files THE50millionprimes_array.c.gz-part0* constitute the 6 parts of the file 
+    THE50millionprimes_array.c.gz containing the table of the first 49,999,999 primes,
+    to be built-in at compile time.
+
+The file THE50millionprimes_array.c can be restored by means of the following steps:
+Step 1. cat THE50millionprimes_array.c.gz-part0* > THE50millionprimes_array.c.gz
+Step 2. Test that the file has been reconstructed correctly:
+        Step 2-a. sha512sum THE50millionprimes_array.c.gz
+        Step 2-b. Compare with the md5sum contained in the file THE50millionprimes_array.c.gz.md5sum
+Step 3. gunzip THE50millionprimes_array.c.gz
+
+Then, to get the the program's executable get a cup of coffee, reload your patience buffer and type 'make'.
