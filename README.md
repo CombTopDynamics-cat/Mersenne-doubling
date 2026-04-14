@@ -65,6 +65,6 @@ The files have self descriptive filenames. However some clarifications are neces
 * Segmented refers to the column *segm* in the four files above. When a register has the first field (*segm*) equals to *s*, the number *q*
   in the register verifies *2^(s-1) < q < 2^s*.
 
-A word of caution: It is not garanteed that the computation_times are completely correct. We are working in recomputing them but, as a really not necessary compuation, it is too "expensive".
+A warning: the computation_times are not guaranteed to be completely correct. We are working on recalculating them but, as a computation that is not really necessary, it is too "expensive".
 
 All code in this repository is by Lluís Alsedà, 2026.
