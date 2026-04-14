@@ -25,19 +25,6 @@ It is a simple and straightforward implementation of the **Algorithm ???** from 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 where **q_ini** and **q_end** must be greater than 16.
 
-
-=====================================================================
-
-
-
-Lines that start with the character '#' or without a 'field_number' or with a non-numeric field
-'field_number' will be considered comment lines.
-field_number is a positive integer that specifies the number of the column to be read, to check the primality of its
-elements.
-
-==============================================================
-
-
 * **IsPrime_geek**\
 Determines the primality of a set of positive integers.
 It uses the most naive algorithm, with the help of a
