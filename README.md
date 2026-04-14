@@ -61,7 +61,7 @@ We include four data files with computed periods:
 
 The files have self descriptive filenames. However some clarifications are necessary.
 * The three 'sorted.lis' files are sorted with respect to periods.
-* Large means larger than 136,279,841 which is the number *p* of the last known Mersenne prime in the *List of Known Mersenne Prime Numbers*.
+* Large means that the periods in the file are larger than 136,279,841 which is the number *p* of the last known Mersenne prime in the *List of Known Mersenne Prime Numbers*.
 * Segmented refers to the column *segm* in the four files above. When a register has the first field (*segm*) equals to *s*, the number *q*
   in the register verifies *2^(s-1) < q < 2^s*.
 
