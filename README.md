@@ -1,4 +1,4 @@
-# Mersenne-doubling
+# Mersenne-doubling &mdash; April 22, 2026
 Study of the primality of Mersenne numbers by calculating periods of the circle doubling map
 
 This repository contains the programs developed in Section 4 and used in Section 5 of the article
@@ -67,4 +67,4 @@ The files have self descriptive names. However some clarifications are necessary
 * Segmented refers to the column *segm* in the four files above. When a register has the first field (*segm*) equals to *s*, the number *q*
   in the register verifies *2^(s-1) < q < 2^s*.
 
-All code in this repository is by Lluís Alsedà, 2026.
+The intelectual property of all the code in this repository is attributted to the three autors of the paper: Lluís Alsedà, Antonio Garijo and Xavier Jarque.
