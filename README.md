@@ -1,4 +1,4 @@
-# Mersenne-doubling &mdash; April 22, 2026
+# Mersenne-doubling &mdash; May, 2026
 Study of the primality of Mersenne numbers by calculating periods of the circle doubling map
 
 This repository contains the programs developed in Section 4 (see **Theorem A(a)**) 
