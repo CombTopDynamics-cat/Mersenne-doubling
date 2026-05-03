@@ -1,10 +1,10 @@
 # Mersenne-doubling &mdash; April 22, 2026
 Study of the primality of Mersenne numbers by calculating periods of the circle doubling map
 
-This repository contains the programs developed in Section 4 and used in Section 5 of the article
+This repository contains the programs developed in Section 4 (see **Theorem A(a)**) 
+and used in Subection 5.1 of the article
 *Mersenne numbers and doubling map* by Lluís Alsedà, Antonio Garijo and Xavier Jarque.
-It also contains the data and conlusions obtained in Section 5 of the article
-(see **Theorem A(a)** and ??????).
+It also contains the data and conlusions obtained in Section 4 and Subection 5.1.
 
 Our goal is to calculate the periods of points of the circle of the form *1/q*,
 with odd *q*, under the doubling map, and determine when the period is prime
@@ -20,7 +20,7 @@ and
 The goal of this program is to compute the periods
 of the points of the circle of the form *1/q* under the doubling map,
 for each odd *q* in a range of positive integers.
-It is a simple and straightforward implementation of the **Algorithm ???** from Section 4.\
+It is a simple and straightforward implementation of the **Algorithm 3** from Section 4.\
 **Usage:** compute_all_periods_in_a_range_of_odd_qs.exe q_ini q_end\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 where **q_ini** and **q_end** must be greater than 16.
