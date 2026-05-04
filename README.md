@@ -29,7 +29,7 @@ where **q_ini** and **q_end** must be greater than 16.
 Determines the primality of a set of positive integers.
 It uses the most naive algorithm, with the help of a
 built-in (at compile time) table with the first 49,999,999 prime numbers
-(taken from *The PrimePages: prime number research & records* http://https://t5k.org/).
+(taken from *The PrimePages: prime number research & records* https://t5k.org/).
 As a consequence, compilation is veeeeeeeery long and tedious, and we must use a special
 **gcc** flag. To make it easier, we include the corresponding Makefile and a special '.c'
 file (which is already #include'd) with the definition of the prime numbers table.\
