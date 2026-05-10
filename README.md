@@ -58,12 +58,13 @@ We include four data files with computed periods:
 * **Large_PrimePeriods_segmented_and_sorted.lis.gz**\
   Every one of the 12135 pairs *(q, period)* in this file provides an example of a Mersenne number *M(period)* with prime exponent which is not prime because it has a divisor *q*.
 * **OddPeriods_NotPrime_segmented_and_sorted.lis.gz**
-* **PrimePeriods_segmented_and_sorted.lis.gz**\
-  Every one of the 1597 pairs  *(q, period)* in this file provides an example of a Mersenne number *M(period)* with prime exponent which is not prime because it has a divisor *q*.
+* **RelativelySmallPrimePeriods_segmented_and_sorted.lis.gz**\
+  Every one of the 121,104 pairs  *(q, period)* in this file provides an example of a Mersenne number *M(period)* with prime exponent which is not prime because it has a divisor *q*.
 
 The files have self descriptive names. However some clarifications are necessary.
 * The three 'sorted.lis' files are sorted with respect to periods.
 * Large means that the periods in the file are larger than 136,279,841 which is the number *p* of the last known Mersenne prime in the *List of Known Mersenne Prime Numbers*.
+  Consequently, "relatively small" means that the periods in the file are smaller than 136,279,841.
 * Segmented refers to the column *segm* in the four files above. When a register has the first field (*segm*) equals to *s*, the number *q*
   in the register verifies *2^(s-1) < q < 2^s*.
 
