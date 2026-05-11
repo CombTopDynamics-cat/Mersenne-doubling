@@ -54,10 +54,12 @@ field_number&nbsp;&nbsp;&nbsp;&nbsp;is a positive integer that specifies the num
 &nbsp;&nbsp;the primality of its elements.
 
 We include four data files with computed periods:
-* **EvenPeriodsDataBase_segmented_and_sorted_with_respect_to_Qs.dat.gz**
+* **EvenPeriodsDataBase_segmented_and_sorted_with_respect_to_Qs.dat.bz2**\
+  Split file (due to excessive size) of lesser interest with 32,734,191 pairs *(q, period)* where the period is even.
 * **Large_PrimePeriods_segmented_and_sorted.lis.gz**\
   Every one of the 12,135 pairs *(q, period)* in this file provides an example of a Mersenne number *M(period)* with prime exponent which is not prime because it has a divisor *q*.
-* **OddPeriods_NotPrime_segmented_and_sorted.lis.gz**
+* **OddPeriods_NotPrime_segmented_and_sorted.lis.bz2**\
+  File of lesser interest with 2,199,404 pairs *(q, period)* where period is odd but not prime.
 * **RelativelySmallPrimePeriods_segmented_and_sorted.lis.gz**\
   Every one of the 121,104 pairs  *(q, period)* in this file provides an example of a Mersenne number *M(period)* with prime exponent which is not prime because it has a divisor *q*.
 
