@@ -2,8 +2,7 @@
 Study of the primality of Mersenne numbers by calculating periods of the circle doubling map
 
 This repository contains the programs developed and used in Section 4 of the article
-*Mersenne numbers and doubling map* by Lluís Alsedà, Antonio Garijo and Xavier Jarque
-(see **Theorem A(a)**).
+*Mersenne numbers and doubling map* by Lluís Alsedà, Antonio Garijo and Xavier Jarque.
 It also contains the data and conlusions obtained in the paper.
 
 Our goal is to calculate the periods of points of the circle of the form *1/q*,
