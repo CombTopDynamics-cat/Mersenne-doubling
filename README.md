@@ -1,5 +1,6 @@
 # Mersenne-doubling &mdash; May, 2026
-Study of the primality of Mersenne numbers by calculating periods of the circle doubling map
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+**Study of the primality of Mersenne numbers by calculating periods of the circle doubling map**
 
 This repository contains the programs developed and used in Section 4 of the article
 *Mersenne numbers and doubling map* by Lluís Alsedà, Antonio Garijo and Xavier Jarque.
@@ -28,7 +29,9 @@ where **q_ini** and **q_end** must be greater than 16.
 Determines the primality of a set of positive integers.
 It uses the most naive algorithm, with the help of a
 built-in (at compile time) table with the first 49,999,999 prime numbers
-(taken from *The PrimePages: prime number research & records* https://t5k.org/).
+excluding 2
+(made from fifty files containing the first fifty million primes, downloaded from
+*The PrimePages: prime number research & records* https://t5k.org/).
 As a consequence, compilation is veeeeeeeery long and tedious, and we must use a special
 **gcc** flag. To make it easier, we include the corresponding Makefile and a special '.c'
 file (which is already #include'd) with the definition of the prime numbers table.\
